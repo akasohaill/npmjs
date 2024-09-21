@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 30px;
+    border-top: 1px solid black;
+}
+
+.footer-items {
+    padding: 10px;
+    width: 200px;
+}
+
+.footer-items p {
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: gray;
+}
+
+.footer-items .heading {
+    font-weight: 800;
+    color: black;
+}
+/* searchbar */
+.search-bar-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between; /* Keeps input and button on the same row */
+    align-items: center;  /* Aligns input and button vertically */
+    border: 1px solid black;
+}
+
+.form {
+    display: flex;
+    flex-direction: row; /* Keeps input and button side by side */
+    width: 100%;
+}
+
+.search-input {
+    width: 750px; /* Adjust this width based on your layout */
+    height: 35px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border: none;
+}
+
+.submit-button {
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    height: 60px;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;  /* Ensures suggestions appear just below the input */
+    left: 0;    /* Aligns the suggestions with the search input */
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 750px; /* Matches the width of the search input */
+    max-height: 150px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.submit-button:hover {
+    color: gray;
+}
+/* package bar */
+.package-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+a {
+    color: #0070f3;
+}
+a:hover {
+    text-decoration: underline;
+}
+
